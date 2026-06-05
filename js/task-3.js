@@ -4,13 +4,13 @@ if (!Array.prototype.toSorted) {
   };
 }
 
-function sortByDescendingFriendCount(users) {
-  const sortByDescendingFriendCount = users.toSorted(
+const sortByDescendingFriendCount = users => {
+  const sortedUsers = users.toSorted(
     (user1, user2) => user2.friends.length - user1.friends.length
   );
   //console.log(sortByDescendingFriendCount);
-  return sortByDescendingFriendCount;
-}
+  return sortedUsers;
+};
 
 //results
 console.log(
